@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Калькулятор</title>
+		<style>
+				body {
+					background-color: lightblue;
+				}
+				button{
+					margin: 1px;
+					width: 50px;
+				}
+				h1 {
+					color: white
+				}
+				.main {
+					margin-left: auto;
+					margin-right: auto;
+					width: 16em;
+					padding: 30px;
+					border-radius: 10px;
+					background-color: grey;
+				}
+				.main:hover {
+					box-shadow: -1px 3px 10px -1px #333;
+				}
+		</style>
+	</head>
+	<body>
+		<br>
+
+		<div class="main">
+			<h1>Калькуляторус</h1>
+			<input style="margin-bottom: 30px" id="form" type="text" class="field" readonly>
+			<span></span>
+			<br>
+			<div style="display: flex;">
+				<div style="margin-right: 20px">
+					<button id="one" class="number">1</button>
+					<button id="two" type="button" class="number">2</button>
+					<button id="three" type="button" class="number">3</button>
+
+					<button id="four" type="button" class="number">4</button>
+					<button id="five" type="button" class="number">5</button>
+					<button id="six" type="button" class="number">6</button>
+
+					<button id="seven" type="button" class="number">7</button>
+					<button id="eight" type="button" class="number">8</button>
+					<button id="nine" type="button" class="number">9</button>
+
+					<button id="point" type="button" class="decimal">.</button>
+					<button id="zero" type="button" class="number">0</button>
+				</div>
+				<div>
+					<button id="clear_all" style="background-color: red;">CE</button>
+					<button id="clear">C</button>
+					<br>
+					<button id="plus" class="operation">+</button>
+					<button id="minus" class="operation"/>-</button>
+					<br>
+					<button id="devision" class="operation">/</button>
+					<button id="multiplication" class="operation">*</button>
+					<br>
+					<button id="result" style= "background-color: green">=</button>
+				</div>
+			</div>
+		</div>
+		<script src="calc.js"></script>
+	</body>
+</html>
